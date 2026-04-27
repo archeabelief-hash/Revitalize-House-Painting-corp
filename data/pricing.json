@@ -1,0 +1,50 @@
+{
+  "disclaimer": "Rough estimates are for planning only. Final price can vary after site inspection, measurements, access, surface condition, materials, repairs, and full scope review.",
+  "conditionMultipliers": {
+    "normal": 1,
+    "needs_extra_prep": 1.25,
+    "heavy_repair_rough_condition": 1.5
+  },
+  "rangeMultiplier": {
+    "low": 0.85,
+    "high": 1.25
+  },
+  "workTypes": [
+    {
+      "id": "interior",
+      "label": "Interior painting",
+      "priceType": "perSqFt",
+      "baseRate": 1.75
+    },
+    {
+      "id": "exterior",
+      "label": "Exterior painting",
+      "priceType": "perSqFt",
+      "baseRate": 2.25
+    },
+    {
+      "id": "drywall",
+      "label": "Drywall repairs",
+      "priceType": "flat",
+      "baseRate": 250
+    },
+    {
+      "id": "handyman",
+      "label": "Handyman punch list",
+      "priceType": "flat",
+      "baseRate": 175
+    },
+    {
+      "id": "cleanout",
+      "label": "Cleanout",
+      "priceType": "flat",
+      "baseRate": 300
+    },
+    {
+      "id": "rentready",
+      "label": "Full rent-ready turnover",
+      "priceType": "flat",
+      "baseRate": 500
+    }
+  ]
+}
