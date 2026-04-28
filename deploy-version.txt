@@ -1,1 +1,1 @@
-Revitalize deploy refresh: 2026-04-27 sales leaderboard and login enter-key update
+Revitalize deploy refresh: live verification and cache bust 2026-04-28-001
