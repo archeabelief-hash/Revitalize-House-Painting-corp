@@ -1,0 +1,1 @@
+console.log('full catalog fix loaded');
