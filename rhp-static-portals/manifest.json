@@ -1,0 +1,15 @@
+{
+  "name": "Revitalize Portal",
+  "short_name": "RHP Portal",
+  "start_url": "./customer.html",
+  "display": "standalone",
+  "background_color": "#0e1117",
+  "theme_color": "#fdab3d",
+  "icons": [
+    {
+      "src": "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='192' height='192'%3E%3Crect width='192' height='192' rx='38' fill='%23fdab3d'/%3E%3Ctext x='50%25' y='54%25' text-anchor='middle' font-size='62' font-family='Arial' font-weight='900' fill='%23111'%3ERHP%3C/text%3E%3C/svg%3E",
+      "sizes": "192x192",
+      "type": "image/svg+xml"
+    }
+  ]
+}

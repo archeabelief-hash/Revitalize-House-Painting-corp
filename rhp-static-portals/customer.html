@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#fdab3d" />
+  <title>Revitalize Customer Portal</title>
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body data-portal-type="customer">
+  <main class="app">
+    <section class="hero">
+      <div class="brand-row"><div class="logo">RHP</div><div><h1 id="pageTitle">Customer Portal</h1><p id="pageSubtitle" class="subtitle"></p></div></div>
+      <span class="status-pill"><span class="status-dot"></span><span id="pageBadge">Customer View</span></span>
+      <p class="install-hint">Save this page to your home screen for quick access. Data refreshes from Monday when opened.</p>
+      <div class="controls"><input id="accessInput" placeholder="Access code" /><button id="saveCodeBtn">Load Portal</button><button id="refreshBtn" class="secondary">Refresh</button><button id="clearCodeBtn" class="secondary">Clear Code</button></div>
+      <p id="statusText" class="subtitle"></p><div id="errorBox" class="notice error hidden"></div>
+    </section>
+    <div id="emptyState" class="notice hidden">Enter the access code Revitalize sent you to load your project portal.</div>
+    <section class="grid">
+      <div class="card span-4"><h2>Access</h2><div id="accessPanel"></div><div id="linkPanel" class="controls"></div><p>Last refreshed: <span id="lastRefreshed">—</span></p></div>
+      <div class="card span-8"><h2>Your Project</h2><div id="workRecords"></div></div>
+      <div class="card span-6"><h2>Contact Record</h2><div id="contactRecords"></div></div>
+      <div class="card span-6"><h2>Related Updates</h2><div id="relatedRecords"></div></div>
+      <div class="card"><h2>Request an Update</h2><form id="requestForm"><label for="requestMessage">Message</label><textarea id="requestMessage" placeholder="Ask a question or request an update..."></textarea><div class="controls"><button type="submit">Send Request</button></div></form></div>
+    </section>
+    <footer class="footer">Revitalize House Painting · Powered by Monday</footer>
+  </main>
+  <script src="./app.js"></script>
+</body>
+</html>
