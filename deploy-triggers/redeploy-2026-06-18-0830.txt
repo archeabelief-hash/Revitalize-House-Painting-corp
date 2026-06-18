@@ -1,0 +1,1 @@
+Trigger rebuild after adding wrangler.jsonc with worker.js as the Cloudflare Worker entry point.
