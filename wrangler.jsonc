@@ -1,0 +1,9 @@
+{
+  "name": "rhp-portal-worker",
+  "main": "worker.js",
+  "compatibility_date": "2026-06-18",
+  "vars": {
+    "PORTAL_LINKS_BOARD_ID": "18418328159",
+    "ALLOWED_ORIGIN": "https://archeabelief-hash.github.io"
+  }
+}
