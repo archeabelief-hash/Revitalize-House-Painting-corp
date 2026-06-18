@@ -12,6 +12,34 @@ Direct app link:
 
 https://archeabelief-hash.github.io/Revitalize-House-Painting-corp/app.html
 
+## SMS intake number
+
+Public text intake number:
+
+573-908-9748
+
+This number is the only number that should route public text requests into the Monday intake agent.
+
+Desired SMS flow:
+
+Customer texts 573-908-9748.
+Twilio receives the SMS.
+Twilio posts the SMS to the Cloudflare Worker endpoint.
+The Worker creates a Monday Intake item.
+The Monday intake agent works the lead inside Monday.
+No customer login is required.
+No public comments or outside posting are required.
+
+Worker template included:
+
+`sms-intake-worker.js`
+
+Required Worker environment variables:
+
+- `MONDAY_API_TOKEN`
+- `MONDAY_INTAKE_BOARD_ID`
+- `TWILIO_AUTH_TOKEN` if signature verification is added
+
 ## Live admin and portal links
 
 Monday-powered admin dashboard:
@@ -38,6 +66,7 @@ https://archeabelief-hash.github.io/Revitalize-House-Painting-corp/turnkey-packe
 - `portal-monday.html` reads live Monday data through the Cloudflare Worker.
 - `project-monday.html` shows project progress, 811 Hickory data, quote build, materials and review flags.
 - `monday-bridge.js` keeps Monday data available to the old localStorage model.
+- `sms-intake-worker.js` is the Twilio-to-Monday SMS intake Worker template for 573-908-9748.
 - Private Monday credentials must stay in the Cloudflare Worker and must not be placed in static HTML.
 
 ## Lightweight app credentials
