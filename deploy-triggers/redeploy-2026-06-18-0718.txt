@@ -1,0 +1,3 @@
+Trigger Cloudflare Worker redeploy for rhp-portal-worker.
+Dashboard: https://rhp-portal-worker.archeabelief.workers.dev/dashboard
+Commit includes live Monday board IDs and view-only dashboard updates.
