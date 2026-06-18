@@ -4,9 +4,13 @@ Central repo for Revitalize House Painting customer-facing tools and Monday-powe
 
 ## Main live interface
 
-Customer quote / booking interface:
+Primary private interface link:
 
 https://archeabelief-hash.github.io/Revitalize-House-Painting-corp/
+
+Direct app link:
+
+https://archeabelief-hash.github.io/Revitalize-House-Painting-corp/app.html
 
 ## Live admin and portal links
 
@@ -28,12 +32,26 @@ https://archeabelief-hash.github.io/Revitalize-House-Painting-corp/turnkey-packe
 
 ## Current build notes
 
-- `index.html` is the main Revitalize quote interface.
+- `index.html` routes the main public link into `app.html`.
+- `app.html` is the private live data interface.
 - `admin-monday.html` reads live Monday data through the Cloudflare Worker.
 - `portal-monday.html` reads live Monday data through the Cloudflare Worker.
 - `project-monday.html` shows project progress, 811 Hickory data, quote build, materials and review flags.
 - `monday-bridge.js` keeps Monday data available to the old localStorage model.
 - Private Monday credentials must stay in the Cloudflare Worker and must not be placed in static HTML.
+
+## Lightweight app credentials
+
+The current login is in-app role filtering only. It is for controlled viewing and account tracking, not hard security.
+
+Default test credentials:
+
+- admin / admin2026
+- client / customer2026
+- agent / agent2026
+- manager / manager2026
+- realtor / realtor2026
+- landlord / landlord2026
 
 ## Active pricing loaded into the interface
 
