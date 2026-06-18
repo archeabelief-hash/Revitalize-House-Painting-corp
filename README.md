@@ -12,33 +12,17 @@ Direct app link:
 
 https://archeabelief-hash.github.io/Revitalize-House-Painting-corp/app.html
 
-## SMS intake number
+## WhatsApp intake
 
-Public text intake number:
+Primary work cell / WhatsApp intake number:
 
-573-908-9748
+573-908-9506
 
-This number is the only number that should route public text requests into the Monday intake agent.
+Direct WhatsApp link:
 
-Desired SMS flow:
+https://wa.me/15739089506
 
-Customer texts 573-908-9748.
-Twilio receives the SMS.
-Twilio posts the SMS to the Cloudflare Worker endpoint.
-The Worker creates a Monday Intake item.
-The Monday intake agent works the lead inside Monday.
-No customer login is required.
-No public comments or outside posting are required.
-
-Worker template included:
-
-`sms-intake-worker.js`
-
-Required Worker environment variables:
-
-- `MONDAY_API_TOKEN`
-- `MONDAY_INTAKE_BOARD_ID`
-- `TWILIO_AUTH_TOKEN` if signature verification is added
+The home interface no longer uses a scheduling form. Customers should contact Revitalize through the WhatsApp link or call the work cell. Monday remains the internal source of truth for intake tracking, project data, materials, and account follow-up.
 
 ## Live admin and portal links
 
@@ -61,12 +45,11 @@ https://archeabelief-hash.github.io/Revitalize-House-Painting-corp/turnkey-packe
 ## Current build notes
 
 - `index.html` routes the main public link into `app.html`.
-- `app.html` is the private live data interface.
+- `app.html` is the private live data interface and WhatsApp intake landing page.
 - `admin-monday.html` reads live Monday data through the Cloudflare Worker.
 - `portal-monday.html` reads live Monday data through the Cloudflare Worker.
 - `project-monday.html` shows project progress, 811 Hickory data, quote build, materials and review flags.
 - `monday-bridge.js` keeps Monday data available to the old localStorage model.
-- `sms-intake-worker.js` is the Twilio-to-Monday SMS intake Worker template for 573-908-9748.
 - Private Monday credentials must stay in the Cloudflare Worker and must not be placed in static HTML.
 
 ## Lightweight app credentials
@@ -79,8 +62,6 @@ Default test credentials:
 - client / customer2026
 - agent / agent2026
 - manager / manager2026
-- realtor / realtor2026
-- landlord / landlord2026
 
 ## Active pricing loaded into the interface
 
