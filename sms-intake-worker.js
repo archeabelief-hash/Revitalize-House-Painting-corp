@@ -1,9 +1,9 @@
 // Revitalize SMS Intake Worker Template
 // Use this as the Cloudflare Worker endpoint for Twilio inbound SMS.
-// Public intake number: 573-908-9748
+// Public intake number: 573-908-9506
 // Keep MONDAY_API_TOKEN, MONDAY_INTAKE_BOARD_ID and any Twilio secrets in Worker environment variables.
 
-const REVITALIZE_SMS_NUMBER = '+15739089748';
+const REVITALIZE_SMS_NUMBER = '+15739089506';
 
 export default {
   async fetch(request, env) {
@@ -45,7 +45,7 @@ export default {
         itemName,
         phone: from,
         message: body,
-        source: 'SMS - 573-908-9748',
+        source: 'SMS - 573-908-9506',
         status: 'New Text Intake',
         log: messageLog
       });
